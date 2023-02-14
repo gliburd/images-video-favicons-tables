@@ -4,11 +4,13 @@
         <meta charset="utf-8">
         <title>Images, Video, Favicons, &amp; Tables</title>
         <!-- TO DO:add your name to the meta author tag -->
-        <meta name="author" content="">
+        <meta name="author" content="Gerniah Liburd">
         <meta name="description" content="Practice with images, video, svgs, favicons, and tables for G.I.T. 215">
 
         <!-- A FAVICON -->
         <!-- TO DO: add the favicon here -->
+         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
         <!-- GOOGLE FONTS LINKS -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -74,6 +76,7 @@
 
                     <!-- TO DO: add the image named square-red-blue to this section below. Be sure to add its height and width -->
 
+                    <img scr="images/square-red-blue.jpg" alt="" width="400" height="400">
                     <p class="credit">Photo by <a href="https://unsplash.com/@usgs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">USGS</a> on <a href="https://unsplash.com/wallpapers/cool/abstract?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
                 </section>
 
@@ -124,8 +127,7 @@
                 <h2>Using Tables in HTML</h2>
                 <p>In HTML, tables are used for tabular data. Think of data similar to a schedule or what you might find easier to read in a spreadsheet format. Tables can cause issues on smaller screens, as they aren't responsive, so consider that if you add them to a page. If they will be small enough to fit on the screen, even with their data, you should be fine.</p>
                 <table>
-                    <!-- TO DO: Complete the code below to create a caption for this table -->
-                    Hours of Operation
+                    <caption>Hours of Operation</caption>
 
                     <thead>
                         <tr>
@@ -145,8 +147,7 @@
                     </tr>
 
                     <tr>
-                        <!-- TO DO: Complete the code below to create a cell that will span all columns -->
-                        <!-- Wednesday - <span class="bold">Closed</span> -->
+                        <td colspan="2">Wednesday - <span class="bold">Closed</span</td>
                     </tr>
 
                     <tr>
@@ -161,13 +162,11 @@
 
                     <tr>
                         <td>Saturday</td>
-                        <!-- TO DO: Complete the code below to create a cell that will span two rows -->
                         <td rowspan="2"><span>Closed</span> By Appointment Only</td>
                     </tr>
 
                     <tr>
-                        <!-- TO DO: Complete the code below to create a cell containing that text -->
-                        <!-- Sunday -->
+                        <td>Sunday</td>
                     </tr>
                 </table>
             </section>
@@ -179,7 +178,12 @@
                 <h2>Follow&nbsp;Us&nbsp;on Social&nbsp;Media</h2>
 
                 <a href="#" aria-label="find us on facebook">
-                    <!-- TO DO: go to the tabler icons site, search for the icon for Facebook, and copy and paste the SVG code below -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="4" y="4" width="16" height="16" rx="4" />
+                        <circle cx="12" cy="12" r="3" />
+                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                    </svg>
                 </a>
                 
                 <a href="#" aria-label="find us on instagram">
